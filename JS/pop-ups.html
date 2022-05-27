@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="showAlert()">Alert</button>
+    <button onclick="showPrompt()">Prompt</button>
+    <button onclick="showConfirm()">Confirm</button>
+
+    <script>
+      function showAlert() {
+        alert("display some information to the user");
+      }
+      function showPrompt() {
+        var name = prompt("Enter your name");
+        console.log("Name entered:", name);
+      }
+      function showConfirm() {
+        var result = confirm("Are you sure you want to do this?");
+        console.log("Result", result);
+      }
+    </script>
+  </body>
+</html>

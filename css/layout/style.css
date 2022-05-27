@@ -1,0 +1,108 @@
+*{margin: 0;padding: 0;}
+
+/* Generic styles */
+
+body{
+    font-family: 'Water Brush', cursive;
+    font-size: 14px;
+}
+/* combinators : , */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato', sans-serif;
+  }
+  h1{
+    font-size: 1.75em;
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  h3{
+    font-size: 1.2em;
+  }
+  h4{
+    font-size: 1em;
+  }
+  h5{
+    font-size: 0.8em;
+  }
+  h6{
+    font-size: 0.7em;
+  }
+
+  .bg-light{
+    background: #eee;
+  }
+  .bg-gray{
+    background: #777;
+  }
+  .bg-dark{
+    background: #333
+  }
+    
+  .container{
+    width: 80%;
+    /* height: 300px; */
+    margin: 0 auto;
+  }
+  .d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+    /* > : child selector */
+nav>ul{
+    list-style-type: none;
+    display: flex;
+  }
+  nav>ul>li{
+    margin: 0 10px;
+    padding: 10px;
+  }
+  nav>ul>li>a{
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+  /* pseudo class : */
+nav>ul>li>a:hover{
+    text-decoration: underline;
+    background: white;
+  }
+  
+  section{
+    margin: 10px 0px;
+  }
+  section>div{
+    width:32% ;
+    height: 200px;
+    background: #777;
+  }
+  @media screen and (max-width:960px){
+    /* override only the styles that are changing */
+    .container{
+      width: 96%;
+      background-color: orange;
+    }
+  }
+  @media screen and (max-width:768px){
+    section>div{
+      width:48%;
+      margin-bottom: 10px;
+      background-color: aqua;
+    }
+  }
+  @media screen and (max-width:560px){
+    .d-flex{
+      flex-direction: column;
+    }
+    section>div{
+      width:96%;
+      background-color: pink;
+    }
+  }
+  
+  
+   
+  
+  

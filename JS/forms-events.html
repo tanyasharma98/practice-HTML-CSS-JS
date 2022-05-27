@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="validate()">
+      Email : <input type="text" name="email" id="email" /><br />
+      Password : <input type="password" name="password" id="password" /><br />
+      <button type="submit">Login</button>
+    </form>
+    <script>
+      function validate() {
+          event.preventDefault();
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        // ===, !== : strict check
+        if (email === "" || password === "") {
+          console.log("some validation logic");
+        } else {
+          console.log("form submission logic");
+        }
+      }
+    </script>
+  </body>
+</html>

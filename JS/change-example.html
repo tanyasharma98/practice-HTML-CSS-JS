@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .btn-sm {
+        padding: 10px 5px;
+      }
+      .btn-md {
+        padding: 15px 10px;
+      }
+      .btn-lg {
+        padding: 20px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <select onchange="addClass()">
+      <option value="">Select</option>
+      <option value="btn-sm">Small</option>
+      <option value="btn-md">Medium</option>
+      <option value="btn-lg">Large</option>
+    </select>
+    <input type="color" onchange="addStyle()" />
+
+    <button>Test button</button>
+
+    <script>
+      var btn = document.getElementsByTagName("button")[0];
+      function addClass() {
+        var cls = event.target.value;
+        btn.className = cls;
+      }
+      function addStyle() {
+        var color = event.target.value;
+        btn.style.backgroundColor = color;
+      }
+    </script>
+  </body>
+</html>

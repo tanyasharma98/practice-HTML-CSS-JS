@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="testEvent()">Click</button>
+    <button ondblclick="testEvent()">Double Click</button>
+    <button onmouseover="testEvent()">Mouse Over</button>
+    <button onmouseout="testEvent()">Mouse Out</button>
+    <button onmousemove="testEvent()">Mouse move</button>
+    <button onmouseup="testEvent()">mouse up</button>
+    <button onmousedown="testEvent()">mouse down</button>
+
+    <script>
+      function testEvent() {
+        console.log("event triggered", event.type);
+      }
+    </script>
+  </body>
+</html>
